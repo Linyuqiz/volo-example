@@ -1,0 +1,12 @@
+[package]
+name = "hello"
+version = { workspace = true }
+edition = { workspace = true } 
+
+[dependencies]
+common = { workspace = true }
+volo = { workspace = true }
+volo-grpc = { workspace = true }
+volo-gen = { workspace = true }
+tokio = { workspace = true }
+anyhow = { workspace = true }

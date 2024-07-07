@@ -1,0 +1,9 @@
+[package]
+name = "common"
+version = { workspace = true }
+edition = { workspace = true }
+
+[dependencies]
+volo = { workspace = true }
+volo-gen = { workspace = true }
+lazy_static = { workspace = true }

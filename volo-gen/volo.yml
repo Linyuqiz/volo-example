@@ -1,0 +1,15 @@
+entries:
+  default:
+    filename: volo_gen.rs
+    protocol: protobuf
+    services:
+      - idl:
+          source: local
+          path: ../proto/hello/hello.proto
+          includes:
+            - ../proto/
+      - idl:
+          source: local
+          path: ../proto/example/example.proto
+          includes:
+            - ../proto/

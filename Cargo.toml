@@ -1,0 +1,22 @@
+[workspace]
+resolver = "2"
+members = ["common", "server", "micro/*", "volo-gen"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+
+[workspace.dependencies]
+common = { path = "common" }
+volo-gen = { path = "volo-gen" }
+tokio = { version = "1.38.0", features = ["full"] }
+volo = "0.10.1"
+volo-http = { version = "0.2", features = ["full"] }
+volo-grpc = "0.10.0"
+volo-build = "0.10.9"
+lazy_static = "1.5.0"
+pilota = "0.11.3"
+futures = "0.3.30"
+anyhow = "1.0.86"
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"

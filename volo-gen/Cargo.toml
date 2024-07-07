@@ -1,0 +1,14 @@
+[package]
+name = "volo-gen"
+version = { workspace = true }
+edition = { workspace = true }
+
+[dependencies]
+volo = { workspace = true }
+volo-grpc = { workspace = true }
+pilota = { workspace = true }
+tokio = { workspace = true }
+futures = { workspace = true }
+
+[build-dependencies]
+volo-build = { workspace = true }
