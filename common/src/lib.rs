@@ -1,2 +1,4 @@
-pub mod grpc_adress;
-pub mod grpc_client;
+pub mod grpc {
+    pub mod address;
+    pub mod client;
+}

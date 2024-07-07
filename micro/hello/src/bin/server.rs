@@ -1,8 +1,8 @@
 use std::net::SocketAddr;
 
-use common::grpc_adress::MICRO_ADDRESS_HELLO;
+use common::grpc::address::MICRO_ADDRESS_HELLO;
 use volo::net::Address;
-use volo_gen::example::ItemServiceServer;
+use volo_gen::hello::ItemServiceServer;
 use volo_grpc::server::{Server, ServiceBuilder};
 
 use hello::S;

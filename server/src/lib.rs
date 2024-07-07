@@ -1,7 +1,7 @@
-use common::grpc_client::{MICRO_EXAMPLE_CLIENT, MICRO_HELLO_CLIENT};
+use common::grpc::client::{MICRO_EXAMPLE_CLIENT, MICRO_HELLO_CLIENT};
 use tracing::info;
 use volo::FastStr;
-use volo_gen::example::{GetExampleRequest, GetItemRequest};
+use volo_gen::{example::GetExampleRequest, hello::GetItemRequest};
 use volo_http::server::route::{get, Router};
 
 async fn index_handler() -> &'static str {

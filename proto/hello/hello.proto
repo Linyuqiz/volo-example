@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package example;
+package hello;
 
 message Item {
     int64 id = 1;

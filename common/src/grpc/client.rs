@@ -2,11 +2,12 @@ use std::net::SocketAddr;
 
 use lazy_static::lazy_static;
 
-use crate::grpc_adress::{MICRO_ADDRESS_EXAMPLE, MICRO_ADDRESS_HELLO};
-
-use volo_gen::example::{
-    ExampleServiceClient, ExampleServiceClientBuilder, ItemServiceClient, ItemServiceClientBuilder,
+use volo_gen::{
+    example::{ExampleServiceClient, ExampleServiceClientBuilder},
+    hello::{ItemServiceClient, ItemServiceClientBuilder},
 };
+
+use crate::grpc::address::{MICRO_ADDRESS_EXAMPLE, MICRO_ADDRESS_HELLO};
 
 lazy_static! {
     pub static ref MICRO_HELLO_CLIENT: ItemServiceClient = {

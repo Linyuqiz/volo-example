@@ -1,6 +1,6 @@
 use std::net::SocketAddr;
 
-use common::grpc_adress::MICRO_ADDRESS_EXAMPLE;
+use common::grpc::address::MICRO_ADDRESS_EXAMPLE;
 use volo::net::Address;
 use volo_gen::example::ExampleServiceServer;
 use volo_grpc::server::{Server, ServiceBuilder};

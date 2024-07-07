@@ -1,5 +1,5 @@
 use std::result::Result;
-use volo_gen::example::{GetExampleRequest, GetExampleResponse, ExampleService};
+use volo_gen::example::{ExampleService, GetExampleRequest, GetExampleResponse};
 use volo_grpc::{Request, Response, Status};
 
 pub struct S;
